@@ -1,0 +1,11 @@
+{
+  "name": "consultor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Richienb/consultor",
+  "author": "Richie Bendall <richiebendall@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.4.3"
+  }
+}
