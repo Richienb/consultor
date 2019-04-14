@@ -24,7 +24,7 @@
  * SOFTWARE.
  */
 
-class consultor {
+export class consultor {
     css(value: any, styles: string) {
         console.log(`%c${value}`, styles)
     }
@@ -75,6 +75,10 @@ class consultor {
         console.groupEnd();
     }
 
+    met() {
+        return console.methods
+    }
+
     prf(label = "default", func: any) {
         console.profile(label);
         func()
@@ -92,7 +96,8 @@ class consultor {
     }
 
     tms(label = "default") {
-        console.timeStamp(label)
+        if (console.markTimeline) console.markTimeline(label)
+        else console.timeStamp(label)
     }
 
     trc() {
@@ -105,5 +110,3 @@ class consultor {
         })
     }
 }
-
-export default new consultor();

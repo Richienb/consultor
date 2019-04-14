@@ -6,12 +6,12 @@
   "author": "Richie Bendall <richiebendall@gmail.com>",
   "license": "MIT",
   "scripts": {
-      "build:ts": "tsc",
-      "build:js": "rollup dist/index.js --format umd --name consultor --file dist/dist/index.js",
-      "build": "yarn build:ts && yarn build:js"
+    "build:ts": "tsc",
+    "build:min": "rollup dist/index.js --format umd --name consultor --file dist/dist/index.js",
+    "build": "yarn build:ts && yarn build:min"
   },
   "devDependencies": {
-    "rollup": "^1.10.0",
+    "google-closure-compiler": "^20190325.0.0",
     "typescript": "^3.4.3"
   }
 }
