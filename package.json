@@ -11,7 +11,7 @@
     "build": "yarn build:ts && yarn build:min"
   },
   "devDependencies": {
-    "google-closure-compiler": "^20190325.0.0",
+    "google-closure-compiler": "^20200315.0.0",
     "typescript": "^3.4.3"
   }
 }
